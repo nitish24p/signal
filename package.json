@@ -9,7 +9,19 @@
   "bugs": {
     "url": "https://github.com/nitish24p/signal/issues"
   },
+  "scripts": {
+    "test": "node_modules/.bin/ava tests/**/*.test.js --verbose",
+    "minify": "uglifyjs signal.js --source-map \"filename=signal.min.js.map\" -m -c -o signal.min.js && echo 'Minified size' && cat signal.min.js | gzip -9f | wc -c"
+  },
   "dependencies": {
+    "ava": "^0.25.0",
+    "babel-register": "^6.26.0",
+    "uglify-es": "^3.3.9",
     "uglify-js": "3.4.5"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
   }
 }
