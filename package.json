@@ -1,0 +1,15 @@
+{
+  "name": "signal",
+  "version": "1.0.0",
+  "description": "A 700 byte zero dependency single instance of an event emitter. 🎉",
+  "main": "signal.js",
+  "repository": "git@github.com:nitish24p/signal.git",
+  "author": "Nitish Phanse <nitsums@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nitish24p/signal/issues"
+  },
+  "dependencies": {
+    "uglify-js": "3.4.5"
+  }
+}
