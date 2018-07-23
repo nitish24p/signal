@@ -1,7 +1,7 @@
 {
   "name": "signal",
   "version": "1.0.0",
-  "description": "A 700 byte zero dependency single instance of an event emitter. 🎉",
+  "description": "A 800 byte zero dependency single instance of an event emitter. 🎉",
   "main": "signal.js",
   "repository": "git@github.com:nitish24p/signal.git",
   "author": "Nitish Phanse <nitsums@gmail.com>",
@@ -27,6 +27,14 @@
       "babel-register"
     ]
   },
+  "keywords": [
+    "event emitter",
+    "singleton",
+    "pubsub",
+    "micro front end",
+    "communication",
+    "listeners"
+  ],
   "nyc": {
     "reporter": [
       "lcov",
