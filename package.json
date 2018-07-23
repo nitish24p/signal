@@ -1,5 +1,5 @@
 {
-  "name": "signal",
+  "name": "signal-event",
   "version": "1.0.0",
   "description": "A 800 byte zero dependency single instance of an event emitter. 🎉",
   "main": "signal.js",
