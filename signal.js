@@ -59,10 +59,6 @@ const Signal = (function () {
       return;
     }
 
-    if (this.events && !this.events[eventName]) {
-      return;
-    }
-
     const eventHandlerList = this.events[eventName];
 
     const signalId = eventHandler._signalId;

@@ -57,7 +57,7 @@ test('Instance can emit', async t => {
   Signal1.emit('woot', 'boot');
 });
 
-test('Instance can emit multiple times', async t => {
+test('Instance can remove a handler', async t => {
   const Signal1 = new Signal();
   const firstHandler = function(data) {}
 
@@ -71,4 +71,24 @@ test('Instance can emit multiple times', async t => {
 
   Signal1.remove('woot', thirdHandler);  
   t.is(Object.keys(Signal1.events.woot).length, 3);
-})
+});
+
+test('Pass undefined eventname for remove', async t => {
+  const Signal1 = new Signal();
+  t.is(Signal1.remove(), undefined)
+});
+
+test('Annonymous function warning', async t => {
+  const Signal1 = new Signal();
+  const firstHandler = function(data) {}
+  Signal1.on('woot', firstHandler);
+  t.is(Signal1.remove('woot', () => { }), undefined)
+});
+
+test('Remove all handler for an event', async t => {
+  const Signal1 = new Signal();
+  const firstHandler = function (data) { }
+  Signal1.on('woot', firstHandler);
+  t.is(Signal1.remove('woot', () => { }, true), undefined)
+  t.is(Object.keys(Signal1.events).length, 0);
+});
