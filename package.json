@@ -1,6 +1,6 @@
 {
   "name": "signal-event",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A 700 byte zero dependency single instance of an event emitter. 🎉",
   "main": "signal.js",
   "repository": "git@github.com:nitish24p/signal.git",
