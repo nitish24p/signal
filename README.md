@@ -107,12 +107,8 @@ Signal.on(eventName, handlerFunction)
 ```md
 Signal.emit(eventName, data)
 ```
-3. Emit Event
-```md
-Signal.emit(eventName, data)
-```
 
-4. Remove Event Handler
+3. Remove Event Handler
 ```md
 Signal.remove(eventName, handlerFunction, removeAllHandlers)
 ```
