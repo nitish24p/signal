@@ -1,4 +1,5 @@
 # Signal
+[![Build Status](https://travis-ci.org/nitish24p/signal.svg?branch=master)](https://travis-ci.org/nitish24p/signal)
 
 Signal is a light ~700 Bytes Singleton instance of an Event bus. It works directly in the browser or has support for commonJS and amd modules.
 
@@ -113,7 +114,7 @@ Signal.emit(eventName, data)
 Signal.remove(eventName, handlerFunction, removeAllHandlers)
 ```
 
-#Dev Setup
+### Dev Setup
 ```bash
 yarn run test
 yarn run cover
