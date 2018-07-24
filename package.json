@@ -13,10 +13,12 @@
     "test": "node_modules/.bin/ava tests/**/*.test.js --verbose",
     "cover": "node_modules/.bin/nyc yarn test",
     "check-coverage": "node_modules/.bin/nyc check-coverage --lines 93 --functions 100 --branches 85 --statements 94",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "minify": "uglifyjs signal.js --source-map \"filename=signal.min.js.map\" -m -c -o signal.min.js && echo 'Minified size' && cat signal.min.js | gzip -9f | wc -c"
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "coveralls": "^3.0.2",
     "babel-register": "^6.26.0",
     "nyc": "^12.0.2",
     "uglify-es": "^3.3.9",
