@@ -8,6 +8,7 @@ before_script:
 script:
   - "npm run cover"
   - "npm run check-coverage"
+  - "npm run coveralls"
 cache:
   directories:
     - node_modules
