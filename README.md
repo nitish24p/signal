@@ -1,6 +1,9 @@
 # Signal
 [![Build Status](https://travis-ci.org/nitish24p/signal.svg?branch=master)](https://travis-ci.org/nitish24p/signal)
 [![Coverage Status](https://coveralls.io/repos/github/nitish24p/signal/badge.svg?branch=master)](https://coveralls.io/github/nitish24p/signal?branch=master)
+
+&nbsp;
+
 Signal is a light ~700 Bytes Singleton instance of an Event bus. It works directly in the browser or has support for commonJS and amd modules.
 
 Its Really tiny. Check it out [here](https://bundlephobia.com/result?p=signal-event@1.0.0);
